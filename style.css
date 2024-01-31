@@ -77,7 +77,8 @@ main {
   background-color: var(--cobalt-blue);
   background-image: linear-gradient(to top, var(--violet-blue), var(--persian-blue));
   margin: auto;
-  padding: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 /* Styling for span and p within the circle */
