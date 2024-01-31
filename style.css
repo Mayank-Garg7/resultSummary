@@ -1,195 +1,209 @@
 /* Root variables for color values */
 :root {
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
-  --green-teal: hsl(166, 100%, 37%);
-  --cobalt-blue: hsl(234, 85%, 45%);
-
-  --light-slate-blue: hsl(252, 100%, 67%);
-  --light-royal-blue: hsl(241, 81%, 54%);
-
-  --violet-blue: hsla(256, 72%, 46%, 1);
-  --persian-blue: hsla(241, 72%, 46%, 0);
-
-  --white: hsl(0, 0%, 100%);
-  --pale-blue: hsl(221, 100%, 96%);
-  --light-lavender: hsl(241, 100%, 89%);
-  --dark-gray-blue: hsl(224, 30%, 27%);
-}
-
-/* Importing a Google Font */
-@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
-
-/* Resetting default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styling */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--white);
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-
-/* Main container styling */
-main {
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-  height: 60%;
-  border-radius: 1.5rem;
-  background-color: var(--white);
-  box-shadow: 5px 5px 20px 0px var(--light-lavender);
-}
-
-/* Styling for Section 1 - Your Result */
-.part1 {
-  width: 50%;
-  background-color: var(--cobalt-blue);
-  background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  color: var(--light-lavender);
-  display: flex;
-  flex-direction: column;
-}
-
-/* Styling for h1 within Section 1 */
-.part1 > h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-}
-
-/* Styling for the circle within Section 1 */
-.part1 > .circle {
-  height: 9rem;
-  width: 9rem;
-  border-radius: 50%;
-  background-color: var(--cobalt-blue);
-  background-image: linear-gradient(to top, var(--violet-blue), var(--persian-blue));
-  margin: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-/* Styling for span and p within the circle */
-.part1 > .circle > span {
-  font-size: 3.6rem;
-  font-weight: bold;
-  color: var(--white);
-}
-
-.part1 > .circle > p {
-  margin-left: 0.8rem;
-}
-
-/* Styling for h2 within Section 1 */
-.part1 > h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  color: var(--white);
-  margin-bottom: 1rem;
-}
-
-/* Styling for p within Section 1 */
-.part1 > p {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-/* Styling for Section 2 - Summary */
-.part2 {
-  width: 50%;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  display: flex;
-  color: hsl(224, 30%, 27%);
-  font-weight: bold;
-  flex-direction: column;
-}
-
-/* Styling for the container within Section 2 */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Styling for individual sections within the container */
-.first, .sec, .third, .fourth {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
-  width: 100%;
-  border-radius: 8px;
-  justify-content: space-between;
-}
-
-/* Styling for the name section */
-.name {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Styling for the image within the name section */
-.name > img {
-  padding-top: 2px;
-  margin-right: 10px;
-}
-
-/* Individual background and text color for each section */
-.first {
-  background-color: hsla(0, 86%, 51%, 0.062);
-}
-
-.sec {
-  background-color: hsla(39, 100%, 56%, 0.096);
-}
-
-.third {
-  background-color: hsla(166, 100%, 37%, 0.062);
-}
-
-.fourth {
-  background-color: hsla(234, 85%, 45%, 0.075);
-}
-
-/* Styling for the score section */
-.score {
-  float: right;
-  > span {
-    color: gray;
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+  
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+  
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+  
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
   }
-}
-
-/* Styling for the Continue button */
-.submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  width: 100%;
-  height: 2.8rem;
-  background-color: hsl(224, 30%, 27%);
-  color: white;
-  border-radius: 2rem;
-}
+  
+  /* Importing a Google Font */
+  @import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+  
+  /* Resetting default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--white);
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+  
+  /* Main container styling */
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    max-width: 100%;
+    height: 60%;
+    border-radius: 1.5rem;
+    background-color: var(--white);
+    box-shadow: 5px 5px 20px 0px var(--light-lavender);
+    margin: 0;
+  }
+  
+  /* Styling for Section 1 - Your Result */
+  .part1 {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: var(--cobalt-blue);
+    background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    color: var(--light-lavender);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  /* Styling for h1 within Section 1 */
+  .part1 > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  
+  /* Styling for the circle within Section 1 */
+  .part1 > .circle {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color: var(--cobalt-blue);
+    background-image: linear-gradient(to top, var(--violet-blue), var(--persian-blue));
+    margin: auto;
+    margin-top: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  
+  /* Styling for span and p within the circle */
+  .part1 > .circle > span {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--white);
+    padding-left: 0.3rem;
+    /* padding-top: 7rem; */
+  }
+  
+  .part1 > .circle > p {
+    margin-left: 0.8rem;
+  }
+  
+  /* Styling for h2 within Section 1 */
+  .part1 > h2 {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling for p within Section 1 */
+  .part1 > p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  /* Styling for Section 2 - Summary */
+  .part2 {
+    width: 50%;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+    flex-direction: column;
+  }
+  
+  /* Styling for the container within Section 2 */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for individual sections within the container */
+  .first, .sec, .third, .fourth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+  
+  /* Styling for the name section */
+  .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Styling for the image within the name section */
+  .name > img {
+    padding-top: 2px;
+    margin-right: 10px;
+  }
+  
+  /* Individual background and text color for each section */
+  .first {
+    background-color: hsla(0, 86%, 51%, 0.062);
+  }
+  
+  .sec {
+    background-color: hsla(39, 100%, 56%, 0.096);
+  }
+  
+  .third {
+    background-color: hsla(166, 100%, 37%, 0.062);
+  }
+  
+  .fourth {
+    background-color: hsla(234, 85%, 45%, 0.075);
+  }
+  
+  /* Styling for the score section */
+  .score {
+    float: right;
+    > span {
+      color: gray;
+    }
+  }
+  
+  /* Styling for the Continue button */
+  .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 2.8rem;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 2rem;
+    margin-top: 1rem;
+  }
+  
