@@ -84,7 +84,7 @@
     background-color: var(--cobalt-blue);
     background-image: linear-gradient(to top, var(--violet-blue), var(--persian-blue));
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
